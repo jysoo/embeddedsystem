@@ -27,3 +27,5 @@
 
 
 7. Detect wrong syntax of the input. When a wrong syntax is detected, corresponding error value is returned. (Error message printed). <br />
+
+8. If the motor does not work at high speed commands such as V20, then **change line 520 from Thread::wait(10) to Thread::wait(1)**. <br/>
